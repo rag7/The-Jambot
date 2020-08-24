@@ -15,7 +15,7 @@ class Fun(commands.Cog):
         await ctx.send(embed=image)
         
     @commands.command(brief='red panda!')
-    async def panda(self, ctx):
+    async def redpanda(self, ctx):
         try:
             image = discord.Embed()
             imageUrl = json.loads(requests.get('https://some-random-api.ml/img/red_panda').text)['link']
