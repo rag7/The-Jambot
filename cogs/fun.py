@@ -13,6 +13,12 @@ class Fun(commands.Cog):
         image = discord.Embed()
         image.set_image(url=f'https://www.thiswaifudoesnotexist.net/example-{random.randint(0, 100000)}.jpg')
         await ctx.send(embed=image)
+    
+    
+    @commands.command()
+    async def pingspam(self, ctx, arg):
+        for i in range(100):
+            await ctx.send(f"PONG {arg}")  
         
     @commands.command(brief='red panda!')
     async def panda(self, ctx):
